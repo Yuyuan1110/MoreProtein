@@ -24,6 +24,7 @@
             <version>8.4.0</version>
         </dependency>
 
+
         <!-- Spring Data JPA (如果需要同步的數據庫訪問，可以保留) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -55,11 +56,20 @@
         </dependency>
 
         <!-- Spring Cloud Config Server -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-config-server</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-
         <!-- Spring Cloud Gateway -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -67,10 +77,10 @@
         </dependency>
 
         <!-- Spring Cloud Netflix Eureka Server -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
+<!--        </dependency>-->
 
         <!-- 測試依賴 -->
         <dependency>
