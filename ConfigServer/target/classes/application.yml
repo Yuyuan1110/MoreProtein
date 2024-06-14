@@ -16,3 +16,4 @@ spring:
           search-paths:
           - config-repo/moreprotein
           - config-repo/gateway
+          default-label: process
