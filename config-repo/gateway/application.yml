@@ -2,14 +2,14 @@ spring:
   application:
     name: gateway
   cloud:
-    config:
-      uri: http://localhost:8888
+#    config:
+#      uri: http://localhost:8888
     gateway:
       routes:
         - id: myService
           uri: http://localhost:8444
-          predicates:
-            - Path=/test/**
+#          predicates:
+#            - Path=/test/**
 
 server:
   port: 8443

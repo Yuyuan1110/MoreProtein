@@ -1,9 +1,9 @@
 spring:
   application:
     name: moreprotein
-  cloud:
-    config:
-      uri: http://localhost:8888
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
 
 server:
   port: 8444
