@@ -7,7 +7,7 @@ spring:
     gateway:
       routes:
         - id: myService
-          uri: https://localhost:8444
+          uri: http://localhost:8444
           predicates:
             - Path=/test/**
 
