@@ -1,4 +1,4 @@
-com/moreprotein/model/User.class
 com/moreprotein/controller/HelloController.class
 com/moreprotein/config/DataSourceConfig.class
+com/moreprotein/model/User.class
 com/moreprotein/MoreProteinApplication.class

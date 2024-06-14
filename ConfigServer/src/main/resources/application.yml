@@ -14,5 +14,6 @@ spring:
         git:
           uri: https://github.com/Yuyuan1110/configServer.git
           search-paths:
-          - moreprotein
-          - gateway
+          - config-repo/moreprotein
+          - config-repo/gateway
+          default-label: process
